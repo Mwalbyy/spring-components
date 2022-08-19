@@ -1,9 +1,10 @@
 import './styles.css';
+import Carousel from './components/carousel/Carousel'
 
 function App() {
   return (
     <>
-    <h1>hi</h1>
+     <Carousel/>
     </>
   );
 }
