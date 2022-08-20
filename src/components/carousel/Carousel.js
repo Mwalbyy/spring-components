@@ -13,8 +13,10 @@ export default function Carousel() {
           Next
         </button>
       </div>
-      <div className="carousel__div">
-        <div>{count}</div>
+      <div className="carousel__container">
+        <div className="carousel__div">
+          <div className="carousel__div__count">{count}</div>
+        </div>
       </div>
     </>
   );

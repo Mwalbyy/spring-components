@@ -2,6 +2,11 @@ body
     background-color: #232323
     color: #fff
 
+@mixin center
+    display: flex
+    justify-content: center
+    align-items: center
+
 .carousel
     display: flex
     justify-content: space-between
@@ -11,7 +16,18 @@ body
         border: none
         cursor: pointer
         color: white
+    &__container
+        @include center
+        margin: 3rem
     &__div
-         background-color: gray
-         width: 10rem
-         height: 10rem
+        background-color: gray
+        width: 10rem
+        height: 10rem
+        @include center
+        &__count
+            width: 8rem
+            height: 8rem
+            background-color: red
+            @include center
+
+// 
