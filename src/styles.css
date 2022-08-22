@@ -11,6 +11,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   color: white;
+  margin-top: 20px;
 }
 
 .carousel__btn {
@@ -51,7 +52,6 @@ body {
 .carousel__div__count {
   width: 8rem;
   height: 8rem;
-  background-color: red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,5 +61,21 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
 }
 /*# sourceMappingURL=styles.css.map */
