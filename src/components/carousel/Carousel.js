@@ -52,6 +52,3 @@ let variants = {
 };
 
 let colors = ["red", "green", "blue", "yellow"];
-
-// https://www.youtube.com/watch?v=aV2YJuxQ2vo&ab_channel=SamSelikoff
-// 8:00
