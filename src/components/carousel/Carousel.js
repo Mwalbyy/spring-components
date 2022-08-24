@@ -8,11 +8,11 @@ export default function Carousel() {
   if (tuple[1] !== count) {
     setTuple([tuple[1], count]);
   }
-  console.log(tuple)
-  
+  console.log(tuple);
+
   let prev = tuple[0];
 
-  let direction = count > prev ? "increasing" : "decreasing"
+  let direction = count > prev ? "increasing" : "decreasing";
 
   return (
     <>
@@ -26,12 +26,14 @@ export default function Carousel() {
       </div>
       <div className="carousel__container">
         <div className="carousel__div">
-          <AnimatePresence>
+          <AnimatePresence custom={direction}>
             <motion.div
               key={count}
-              initial={{ x: 100 }}
-              animate={{ x: 0 }}
-              exit={{ x: -200 }}
+              variants={variants}
+              initial="enter"
+              animate="center"
+              exit="exit"
+              custom={direction}
               className={`carousel__div__count ${colors[Math.abs(count) % 4]}`}
             >
               {count}
@@ -42,6 +44,12 @@ export default function Carousel() {
     </>
   );
 }
+
+let variants = {
+  enter: (direction) => ({ x: direction === "increasing" ? 100 : -100 }),
+  center: { x: 0 },
+  exit: (direction) => ({ x: direction === "increasing" ? -200 : 200 }),
+};
 
 let colors = ["red", "green", "blue", "yellow"];
 
