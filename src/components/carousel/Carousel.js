@@ -12,7 +12,7 @@ export default function Carousel() {
 
   let prev = tuple[0];
 
-  let direction = count > prev ? "increasing" : "decreasing";
+  let direction = count > prev ? 1 : -1;
 
   return (
     <>
@@ -46,9 +46,9 @@ export default function Carousel() {
 }
 
 let variants = {
-  enter: (direction) => ({ x: direction === "increasing" ? 100 : -100 }),
+  enter: (direction) => ({ x: direction *100 }),
   center: { x: 0 },
-  exit: (direction) => ({ x: direction === "increasing" ? -200 : 200 }),
+  exit: (direction) => ({ x: direction *200}),
 };
 
 let colors = ["red", "green", "blue", "yellow"];
