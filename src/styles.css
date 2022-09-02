@@ -8,31 +8,20 @@ body {
   color: #fff;
 }
 
-.navbar {
-  color: black;
+.imgContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  background-color: #9f9f9f;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.navbar p {
-  padding: 6px;
-}
-
-.navbar__list {
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-.navbar__list li {
-  padding: 6px;
+.imgContainer img {
+  width: calc(min(30vw, 400px));
 }
 
 .carousel {
@@ -112,5 +101,17 @@ body {
 
 .yellow {
   background-color: yellow;
+}
+
+.class {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=styles.css.map */
