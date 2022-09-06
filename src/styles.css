@@ -8,7 +8,14 @@ body {
   color: #fff;
 }
 
-.imgContainer {
+.home__header p {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.home__img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,9 +25,6 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.imgContainer img {
   width: calc(min(30vw, 400px));
 }
 

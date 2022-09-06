@@ -21,16 +21,28 @@ body
 ///////////////////////////
 
 
+
 ///////////////////////////
 // Table of Contents
 ///////////////////////////
 // 1.FramerMotion Carousel
 // 2.scroll to apear nav
 ///////////////////////////
-.imgContainer
-    @include center
-    img
+.home
+    &__header
+        p
+            font-size: 2rem
+            font-weight: 700
+            text-align: center
+            margin-bottom: 1rem
+    &__img
+        @include center
+        img
         width: calc(min(30vw, 400px))
+
+
+.imgContainer
+    img
 ///////////////////////////
 // FramerMotion Carousel
 ///////////////////////////
