@@ -27,13 +27,14 @@ body
 ///////////////////////////
 // 1.FramerMotion Carousel
 // 2.scroll to apear nav
+// 3.SASS Laptop
 ///////////////////////////
 .home
     &__header
         display: flex
         justify-content: center
         p
-            font-size: 2rem
+            font-size: 4rem
             font-weight: 700
             text-align: center
             margin-bottom: 1rem
@@ -90,4 +91,32 @@ body
 // scroll to apear nav
 ///////////////////////////
 
+    
+    
+///////////////////////////
+// SASS Laptop
+///////////////////////////
+
+.laptop
+    @include center
+    margin: 20%
+    background-color: gray
+    height: 20%
+    padding: 10rem
+    &__screen
+        @include center
+        font-size: 3rem
+        font-weight: 700
+        color: black
+        background-color: white
+        height: 10rem
+        width: 15rem
+        border: .6rem solid #000
+        border-radius: 5% 5% 0% 0%
+        & p:hover
+            cursor: pointer
+    &__keyboard     
+    
+    
+    
 ///////////////////////////

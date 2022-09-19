@@ -18,7 +18,7 @@ body {
 }
 
 .home__header p {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 700;
   text-align: center;
   margin-bottom: 1rem;
@@ -126,5 +126,45 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.laptop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20%;
+  background-color: gray;
+  height: 20%;
+  padding: 10rem;
+}
+
+.laptop__screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+  background-color: white;
+  height: 10rem;
+  width: 15rem;
+  border: .6rem solid #000;
+  border-radius: 5% 5% 0% 0%;
+}
+
+.laptop__screen p:hover {
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */
