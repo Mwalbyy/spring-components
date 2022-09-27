@@ -99,6 +99,7 @@ body
 
 .laptop
     @include center
+    flex-direction: column
     margin: 20%
     background-color: gray
     height: 20%
@@ -115,8 +116,16 @@ body
         border-radius: 5% 5% 0% 0%
         & p:hover
             cursor: pointer
-    &__keyboard     
-    
-    
+    &__keyboard   
+        background-color: blue 
+        width: 18.6rem 
+        height: 5rem
+        transform: perspective(5px) rotateX(1deg)
+        border-radius: 0% 0% 5% 5%
+        @include center
+        &__second
+            background-color: #fff
+            width: 16rem
+            height: 3rem
     
 ///////////////////////////

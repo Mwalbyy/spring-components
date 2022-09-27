@@ -138,6 +138,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   margin: 20%;
   background-color: gray;
   height: 20%;
@@ -166,5 +170,29 @@ body {
 
 .laptop__screen p:hover {
   cursor: pointer;
+}
+
+.laptop__keyboard {
+  background-color: blue;
+  width: 18.6rem;
+  height: 5rem;
+  -webkit-transform: perspective(5px) rotateX(1deg);
+          transform: perspective(5px) rotateX(1deg);
+  border-radius: 0% 0% 5% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.laptop__keyboard__second {
+  background-color: #fff;
+  width: 16rem;
+  height: 3rem;
 }
 /*# sourceMappingURL=styles.css.map */

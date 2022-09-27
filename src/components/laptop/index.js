@@ -11,7 +11,7 @@ export default function Laptop() {
                 </motion.p>
             </div>
             <div className="laptop__keyboard">
-
+                    <div className="laptop__keyboard__second">hi</div>
             </div>
         </div>
     </>
